@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/arrivals",
+      "handler": "arrivals.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arrivals/count",
+      "handler": "arrivals.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arrivals/:id",
+      "handler": "arrivals.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/arrivals",
+      "handler": "arrivals.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/arrivals/:id",
+      "handler": "arrivals.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/arrivals/:id",
+      "handler": "arrivals.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

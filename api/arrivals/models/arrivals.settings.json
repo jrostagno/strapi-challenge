@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arrivals",
+  "info": {
+    "name": "Arrivals",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "arrive",
+        "leave"
+      ]
+    },
+    "timestamp": {
+      "type": "datetime"
+    },
+    "employee": {
+      "type": "string"
+    }
+  }
+}
